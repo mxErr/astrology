@@ -8,9 +8,9 @@ generated_prophecies = []
 
 i = 0
 while i < 5:
-    timeIndex = random.randrange(0, len(times))
-    advicesIndex = random.randrange(0, len(advices))
-    promisesIndex = random.randrange(0, len(promises))
+    timeIndex = random.choice(times)
+    advicesIndex = random.choice(advices)
+    promisesIndex = random.choice(promises)
     generated_prophecies.append(times[timeIndex].title() + " " + advices[advicesIndex] + " " + promises[promisesIndex] + ".")
     i = i + 1
 print (generated_prophecies)
